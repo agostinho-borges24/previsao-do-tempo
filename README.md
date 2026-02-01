@@ -1,16 +1,146 @@
-# React + Vite
+# Previsão do Tempo --- React + OpenWeather
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React.js que permite consultar a previsão
+do tempo de qualquer cidade do mundo, utilizando a API do OpenWeather.\
+A aplicação também exibe automaticamente o clima da localização atual do
+utilizador, oferecendo uma experiência mais prática e intuitiva.
 
-Currently, two official plugins are available:
+------------------------------------------------------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## React Compiler
+-   Pesquisa de clima por nome da cidade\
+-   Detecção automática da localização do utilizador\
+-   Exibição da temperatura atual em graus Celsius\
+-   Estado do tempo (nublado, sol, chuva, etc.)\
+-   Umidade, sensação térmica e pressão atmosférica\
+-   Previsão dos próximos 5 dias\
+-   Interface simples, moderna e responsiva
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+------------------------------------------------------------------------
 
-## Expanding the ESLint configuration
+## Como funciona
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   Ao abrir a aplicação:
+    -   O sistema tenta obter a localização do utilizador
+    -   Caso permitido, o clima local é exibido automaticamente
+-   O utilizador também pode:
+    -   Pesquisar qualquer cidade manualmente
+    -   Visualizar a previsão detalhada e estendida
+
+Se a localização não for permitida, a aplicação continua funcional
+normalmente.
+
+------------------------------------------------------------------------
+
+## Tecnologias utilizadas
+
+-   React.js
+-   Axios (requisições HTTP)
+-   OpenWeather API
+-   CSS puro
+-   Geolocation API (Browser)
+
+------------------------------------------------------------------------
+
+## Estrutura do projeto
+
+    src/
+    ├── components/
+    │   ├── WeatherInformations/
+    │   ├── WeatherInformations5Days/
+    │   └── WeatherInformationsNone/
+    ├── App.jsx
+    ├── App.css
+    └── main.jsx
+
+------------------------------------------------------------------------
+
+## Configuração da API
+
+Este projeto utiliza a OpenWeather API.
+
+1.  Crie uma conta em: https://openweathermap.org/
+
+2.  Gere sua API Key
+
+3.  Substitua a chave no código:
+
+``` js
+const key = "SUA_API_KEY_AQUI";
+```
+
+------------------------------------------------------------------------
+
+## Como executar o projeto
+
+### 1. Clonar o repositório
+
+``` bash
+git clone https://github.com/seu-usuario/previsao-do-tempo-react.git
+```
+
+### 2. Acessar a pasta do projeto
+
+``` bash
+cd previsao-do-tempo-react
+```
+
+### 3. Instalar as dependências
+
+``` bash
+npm install
+```
+
+### 4. Executar a aplicação
+
+``` bash
+npm run dev
+```
+
+A aplicação estará disponível em:
+
+    http://localhost:5173
+
+------------------------------------------------------------------------
+
+## Observações importantes
+
+-   Para melhor experiência, permita o acesso à localização
+-   A aplicação funciona mesmo sem permissão de localização
+-   Ideal para estudos, portfólio ou projetos iniciais em React
+
+------------------------------------------------------------------------
+
+## Melhorias futuras
+
+-   Cache de dados com localStorage
+-   Alternar entre graus Celsius e Fahrenheit
+-   Tema dinâmico baseado no clima
+-   Lista de cidades favoritas
+-   Deploy público (Vercel ou Netlify)
+
+------------------------------------------------------------------------
+
+## Contato
+
+-   **WhatsApp:** +244 932 138 572\
+-   **Email:** agostinholborges24@gmail.com\
+-   **LinkedIn:** https://www.linkedin.com/in/agostinho-l-borges/\
+-   **GitHub:** https://github.com/agostinho-borges24
+
+------------------------------------------------------------------------
+
+## Licença
+
+Este projeto é de uso pessoal.\
+Sinta-se à vontade para se inspirar, mas não copiar integralmente sem
+autorização.
+
+------------------------------------------------------------------------
+
+© 2026 Agostinho Borges. Todos os direitos reservados.
+
+------------------------------------------------------------------------
+
+Se gostaste do projeto, deixa uma estrela.
