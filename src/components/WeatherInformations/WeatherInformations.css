@@ -34,3 +34,11 @@ h2 {
     display: flex;
     justify-content: space-around;
 }
+
+.details p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

@@ -16,9 +16,9 @@ function WeatherInformations({ weather }) {
       </div>
       <p className="description">{weather.weather[0].description} </p>
       <div className="details">
-        <p>Sensação têrmica: {Math.round(weather.main.feels_like)}ºC </p>
-        <p>Umidade: {weather.main.humidity}% </p>
-        <p>Pressão: {weather.main.pressure} </p>
+        <p><img width="32" height="32" src="https://img.icons8.com/windows/32/heating.png" alt="heating"/>Sensação têrmica: {Math.round(weather.main.feels_like)}ºC </p>
+        <p><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/wet.png" alt="wet"/>Umidade: {weather.main.humidity}% </p>
+        <p><img width="35" height="35" src="https://img.icons8.com/fluency-systems-filled/35/atmospheric-pressure.png" alt="atmospheric-pressure"/>Pressão: {weather.main.pressure} </p>
       </div>
     </div>
   );
