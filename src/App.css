@@ -35,3 +35,14 @@ button {
 button:hover {
   background-color: #f57c00;
 }
+
+.input-error {
+  border: 1px solid #b51020;
+}
+
+.invalid-feedback {
+  color: #b51020;
+  font-size: 1.5rem;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
